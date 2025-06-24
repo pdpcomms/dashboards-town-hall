@@ -1,0 +1,57 @@
+/* --- BASE STYLES --- */
+body {
+  margin: 0;
+  font-family: Calibri, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  background: var(--bg);
+  color: var(--fg);
+}
+
+/* CSS Variables for themes */
+:root {
+  --bg: #f5f5f5;
+  --fg: #333;
+  --btn-bg: #1a73e8;
+  --btn-fg: #fff;
+}
+
+.linktree {
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.profile {
+  margin-bottom: 20px;
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.btn {
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+  background: var(--btn-bg);
+  color: var(--btn-fg);
+  border-radius: 25px;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+.btn:hover {
+  opacity: 0.9;
+}
